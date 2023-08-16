@@ -1,0 +1,23 @@
+{
+  "name": "sourcemaps-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -b src/tsconfig.json && node ./webpack.backend.js build -s lib/index.js -o out"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@itwin/backend-webpack-tools": "^4.1.0",
+    "@itwin/build-tools": "^4.1.0",
+    "@itwin/core-webpack-tools": "^4.1.0",
+    "chalk": "3.0.0",
+    "typescript": "^5.1.6",
+    "webpack": "5.64.4",
+    "webpack-cli": "^5.1.4",
+    "yargonaut": "^1.1.4",
+    "yargs": "^17.7.2"
+  }
+}

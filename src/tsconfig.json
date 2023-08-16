@@ -1,0 +1,16 @@
+{
+  "extends": "../node_modules/@itwin/build-tools/tsconfig-base.json",
+  "compilerOptions": {
+    "outDir": "../lib",
+    "rootDir": ".",
+    "module": "CommonJS",
+    // for dynamic imports to not be transpiled to require,
+    // otherwise webpack doesn't allow them to be truly dynamic as needed for extensions
+    "moduleResolution": "Node16",
+    "resolveJsonModule": true,
+    "esModuleInterop": true
+  },
+  "include": [
+    "**/*.ts*",
+  ],
+}
